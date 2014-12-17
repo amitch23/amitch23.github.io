@@ -223,6 +223,18 @@ footer {
     right:50px;
     top:52px;
   }
+
+  #head_lft{
+    float:left;
+  }
+
+  #head_right{
+    float:right;
+  }
+
+  #resume_wrapper{
+    text-align: left;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
