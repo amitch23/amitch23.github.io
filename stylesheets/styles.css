@@ -250,8 +250,8 @@ margin-bottom: 5px;
     width: 150px;
 }
 
-#projects h2{
-  width:100px;
+#projects h2 {
+  margin-top:70px;
 }
 
 @media print, screen and (max-width: 720px) {
