@@ -224,7 +224,10 @@ footer {
     top:52px;
   }
 
-  #head_lft{
+
+}
+
+ #head_lft{
     float:left; 
   }
 
@@ -235,8 +238,6 @@ footer {
   #resume_wrapper{
     text-align: left;
   }
-}
-
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
