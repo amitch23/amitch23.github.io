@@ -18,104 +18,36 @@
         <h1>Andrea Mitchell</h1>
         <p>Software Engineer</p>
 
-        <ul class = navigation>
-          <li> <a href="about.html"></li>
-          <li> </li>
-          <li> </li>
+        <ul class ="navigation">
+          <li> <a href="projects.html">Projects</a></li>
+          <li> <a href="resume.html">Resumé</a></li>
+          <li> <a href="about.html">About</a></li>
+
+        </ul>
 
 
         <p class="view"><a href="https://github.com/amitch23">View my gitHub profile</a></p>
 
       </header>
+
       <section>
 
 <img src="img/Babel_chat_index.png" width="100%">
-Babel Chat
-========
-Babel Chat is a video chat web app that allows language learners to connect with native speakers of their target language and engage in guided, interactive chat sessions.
+
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span>Projects</a></h3>
+
+<a href="heeps://github.com/amitch23/Babel_Chat" target="_blank"><h2>Babel Chat</h2></a>
+
+<p>Babel Chat is a video chat web app that allows language learners to connect with native speakers of their target language and engage in guided, interactive chat sessions.
 
 Providing an internationally convenient, entirely browser-hosted video language exchange, Babel Chat users can play games that cater to various learning styles while strengthening vocabulary, grammar, and communication skills. Users may also choose to discuss common themes by responding to questions in the chatbox, all in real time.
 
-Babel Chat is built in Python with a Flask framework, uses a SQLite database, and integrates the FlaskSocketio and OpenTok APIs for websocket functionality.
+Babel Chat is built in Python with a Flask framework, uses a SQLite database, and integrates the FlaskSocketio and OpenTok APIs for websocket functionality.</p>
 
-![picture](https://github.com/amitch23/Babel_chat/blob/master/static/Babel_chat_index.png)
-
-Profile page:
-![picture](https://github.com/amitch23/Babel_chat/blob/master/static/jacques_prof.png)
-
-Videochat Room:
-
-![picture](https://github.com/amitch23/Babel_chat/blob/master/static/videochat1.png)
+<a href="https://github.com/amitch23/Babel_Chat" target="_blank"><img src="img/Babel_chat_index.png"></a>
 
 
-Getting started:
---------------------
-1) First, clone this directory to your computer.
-
-<pre><code>$ git clone https://github.com/amitch23/Babel_Chat.git</code></pre>
-
-2) Create and activate a virtual environment in the same directory: 
-
-<pre><code>$ pip install virtualenv
-$ virtualenv env
-$ . env/bin/activate 
-</code></pre>
-
-3) Install the required packages using pip:
-
-<pre><code>(env)$ pip install -r requirements.txt
-</code></pre>
-
-4) The OpenTok API requires api_key and api_secret variables. Go to 'https://tokbox.com/' and sign up to get your keys and set them in your BASH profile:
-
-<pre><code>
-export API_KEY="your_API_key"
-export API_SECRET="your_API_secret"
-</pre></code>
-
-4) In Chrome or Firefox, open 2 browser windows - one in 'normal' mode and another in incognito or private mode:
-
-<pre><code>http://localhost:5000/</code></pre> 
-
-Create new profiles and enter the chat room!
-
-
-
-The Breakdown:
---------------------
-- babel.py: runs the program, and contains all of the Flask app routes and socket handlers.
-
-- model.py: creates the database and classes.
-
-- babelchat.db: database that stores user, language, and game information
-
-- Templates directory: 
- html templates that implement Jinja to render pages in the browser, as well as sockets.js, which creates and handles websocket connectivity with the server for multiple-client functionality.
-
-
-- Static directory:
-  - Images: html visual elements, including the logo, background, icons, and game content.
-  - Jquery and Bootstrap libraries with custom CSS stylesheets.
- 
-
-A little bit about websockets:
---------------------
-
-Once a user enters the waiting room or starts a game, the web sockets are connected for both clients. Instead of standard http requests, web sockets open a bidirectional, real time channel in which the server 'listens' to emissions from the connected clients and vice versa. 
-
-For two users to join a room and start a game, 15 separate passes between the clients and server are called. (By ‘pass’, I mean a request or ‘call’ emitted through the cloud.)
-
-The diagram below demonstrates how the server and clients are emitting and receiving data. Each arrow represents a function that sends a python dictionary (or javascript object) to either the client or server.
-
-
-![picture](https://github.com/amitch23/Babel_chat/blob/master/static/diagram_sockets.jpg)
-
-
-Contact information
-------------------------
-Email: andrealeemitchell@gmail.com      
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
