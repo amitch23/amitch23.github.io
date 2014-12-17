@@ -254,6 +254,11 @@ margin-bottom: 5px;
   margin-top:70px;
 }
 
+#projects_resume h2 {
+width:100px;
+
+}
+
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
