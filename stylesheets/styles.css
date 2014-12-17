@@ -231,6 +231,10 @@ footer {
     text-align: left;
   }
 
+#resume_wrapper h2{
+margin-bottom: 5px;
+
+}
  .head_lft{
     float:left; 
     text-align: left;
