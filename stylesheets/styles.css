@@ -227,17 +227,25 @@ footer {
 
 }
 
- #head_lft{
-    float:left; 
-  }
-
-  #head_right{
-    float:right;
-  }
-
   #resume_wrapper{
     text-align: left;
   }
+
+ .head_lft{
+    float:left; 
+    text-align: left;
+  }
+
+  .head_rt{
+    float:right;
+    text-align:right;
+  }
+
+#main_section {
+    text-align: left;
+    width: 150px;
+}
+
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
