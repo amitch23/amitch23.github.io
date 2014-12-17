@@ -154,7 +154,6 @@ strong {
 
 header ul li + li {
   width:88px;
-  border-left:1px solid #fff;
 }
 
 header ul li + li + li {
