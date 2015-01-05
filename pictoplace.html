@@ -65,13 +65,6 @@ $.ajax({
 
    		});
 
-
-  success: function(data) {
-    $('.name').text(data.data.username);
-    $('.tagline').text(data.data.bio);
-  }
-});
-
 $.ajax({
   type: "GET",
   dataType: "jsonp",
